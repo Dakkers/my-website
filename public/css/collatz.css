@@ -1,0 +1,35 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(200,200,225);
+	font: 20px normal 'Ubuntu Condensed' sans-serif;
+}
+
+
+/*
+===================
+=content
+===================
+*/
+h1 { margin-bottom: 0px; }
+small { margin-left: -10px; }
+.graph { margin: auto; }
+button { font: 16px normal 'Ubuntu Condensed' sans-serif; }
+#itslist { display: none; }
+
+
+/*
+===================
+=misc
+===================
+*/
+#container {
+	width: 80%;
+	margin: auto;
+}
+.centering { text-align: center; }

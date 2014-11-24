@@ -1,0 +1,39 @@
+html
+  head
+    title Dakota St. Laurent
+    link(href='/css/projects.css',rel='stylesheet')
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/js/vendor/jQueryRotateCompressed.js')
+    script(src='/js/nav.js')
+    script(src='/js/projects.js')
+
+  body
+    h1 Projects
+    p.
+      Here's a few projects I've worked on over the past year or so. 
+      Not everything I'm currently working on is listed here, as it's 
+      absolutely-incredibly-super-confidential information that is 
+      on a strict need-to-know basis. Or something.
+    div#projects
+      for proj in projects
+        div.project
+          h2
+            img(src="/img/caret.png")
+            = proj.title
+          h4
+            = proj.header
+          div.hidden-content
+            p!= proj.content.replace('(LINKHERE)', "<a href="+proj.link+">here</a>")
+            
+    hr
+    p.
+      For the record, this website is written using NodeJS/Express, Jade, SASS and CoffeeScript, 
+      except for the web-apps hosted on here (at the moment).
+
+    div.centering
+      ul.centering#nav
+        li#li-hom Home
+        li#li-blo Blog
+        li#li-git GitHub
+        li#li-twi Twitter
+        li#li-lin LinkedIn

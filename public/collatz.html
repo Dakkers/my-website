@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/js/vendor/canvasjs.min.js"></script>
+  <script src="/js/collatz.js"></script>
+  <link rel="stylesheet" href="/css/collatz.css">
+  <title>The Collatz Conjecture: An Interactive Webpage</title>
+</head>
+<body>
+<div id="container">
+
+
+<h1>The Collatz Conjecture</h1>
+<small><i>"Mathematics is not yet ripe enough for such problems."</i>   ~ Paul Erdos (allegedly)</small>
+
+<p>This webpage is for an interactive doohickey for the Collatz conjecture, which, in my
+  opinion, is one of the most interesting unsolved problems in mathematics (but perhaps 
+  I am just a boring person).<br><br>
+
+  The Collatz conjecture (also known as the 3n+1 conjecture) states this: start with a 
+  positive integer n. If n is even, divide it by 2; if n is odd, multiply it by 3 and add 
+  1. Repeat this process. n will eventually reach 1, and then go to 4, and then to 2, and 
+  then 1, etc. More formally speaking, the iterates of n will eventually converge to the 
+  3-cycle {4, 2, 1}. Enter a number below to see its iterates as well as a graph of its 
+  iterates vs. iteration number.
+</p>
+
+
+<div class="centering">
+  <input type="text" id="in-graph1" placeholder="5"></input>
+  <button id="btn-graph1">Graph</button>
+  <button id="btn-stopg1" disabled>Stop</button>
+</div>
+
+<div id="graph1" style="height:400px;width:600px; " class="graph"></div>
+<div class="centering">
+  <button id="btn-itslist">Show Iterates</button>
+  <p id="itslist"></p>
+</div> 
+
+<p>We define the <strong>total stopping time</strong> to be the number of iterations 
+  needed to reach a value of 1 (the first time). Pick two numbers below to see a 
+  graph of total stopping time vs. initial values. Be warned: picking a number above 
+  1000 will get pretty slow.</p>
+
+<div class="centering">
+  <input type="text" id="in-g2min" placeholder="1">
+  <input type="text" id="in-g2max" placeholder="100">
+  <button id="btn-graph2">Graph!</button>
+  <button id="btn-stopg2" disabled>Stop</button>
+</div>
+
+<div id="graph2" style="height:400px;width:600px; " class="graph"></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import base
+
+// MIXINS =======================
+=marg-pad-bgc($margU, $margR, $margD, $margL, $padU, $padR, $padD, $padL, $bgc)
+  margin: $margU $margR $margD $margL
+  padding: $padU $padR $padD $padL
+  background-color: $bgc
+
+=cross-box-shadow($offsetH, $offsetV, $blurRadius, $spreadRadius, $color)
+  -webkit-box-shadow: $offsetH $offsetV $blurRadius $spreadRadius $color
+  -moz-box-shadow: $offsetH $offsetV $blurRadius $spreadRadius $color
+  box-shadow: $offsetH $offsetV $blurRadius $spreadRadius $color
+
+// VARIABLES ===================
+$posts-width: 73%
+$sidebar-width: 20%
+$posts-margin-h: (100% - $posts-width - $sidebar-width - 2.5%)/2
+  
+// MISC ========================
+body
+  margin: 0 auto
+  background-color: #ECECEC
+  color: #22313F
+*,
+*:after,
+*:before
+  -webkit-box-sizing: border-box /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box    /* Firefox, other Gecko */
+  box-sizing: border-box         /* Opera/IE 8+ */
+
+a
+  text-decoration: none
+
+
+// HEADER STUFF =================
+#header
+  text-align: center
+  font-family: $font-extralight
+  +marg-pad-bgc(0,0,2.5%,0,  1.5%,0,1.5%,0,  #674172)
+  a
+    color: white
+
+
+// CONTENT ======================
+#posts
+  width: $posts-width
+  +marg-pad-bgc(0,$posts-margin-h,0,2.5%,  0,0,0,0,  inherit)
+
+.post
+  +marg-pad-bgc(0,0,30px,0,  1%,1%,1%,1%,  #F2F1EF)
+  border: 1px solid #b6b6b6
+
+  .filler
+    padding: 1%
+
+  .post-content
+    margin-bottom: 2%
+    h2
+      margin: 0
+      a
+        color: #22313F
+    p
+      margin: 10px 0 0 0
+    .link-to-post
+      color: #6C7A89
+  
+  .post-info
+    border-top: 1px solid #b6b6b6
+    .topic-padding
+      margin-top: 1%
+    .topic
+      padding: 2px
+      margin-right: 5px
+      font-size: 14px
+      a
+        color: #ABB7B7
+        &:hover
+          color: black
+
+#sidebar
+  width: $sidebar-width
+  background-color: #DADFE1
+  border: 1px solid #b6b6b6
+  padding: 1%
+
+  p
+    margin: 0
+    padding: 0
+  ul
+    margin: 0 0 4% 0
+    padding: 0 3%
+  li
+    list-style: none
+  a
+    color: #3498DB
+
+#sidebar, #posts
+  float: left
+  position: relative

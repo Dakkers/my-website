@@ -1,0 +1,21 @@
+node_modules
+public/bower_components
+*.log
+.jshintrc
+.brackets.json
+mywebsite.sublime-project
+mywebsite.sublime-workspace
+
+# compiled markdown
+README.html
+
+# sass partials that became css
+public/css/*.map
+public/css/_*.css
+
+# data (roomsurfer, blog)
+public/json
+blogdumper.py
+
+# BIG SHIT
+public/AMATH231CourseNotes.pdf

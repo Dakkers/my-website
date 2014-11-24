@@ -1,0 +1,30 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "authors": [
+    "Dakota St. Laurent <d.h.stlaurent@gmail.com>"
+  ],
+  "description": "homepage of Dakota St. Laurent",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "http://stdako.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.3",
+    "angular-sanitize": "~1.3.3",
+    "angular-route": "~1.3.3",
+    "angular-resource": "~1.3.3",
+    "momentjs": "~2.8.4"
+  }
+}

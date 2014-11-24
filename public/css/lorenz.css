@@ -1,0 +1,100 @@
+/*
+===============
+=general
+===============
+*/
+#intro, #deriv, #varyA, #varyB, #plots, #app, #bib {
+	display: none;
+}
+
+body {
+	margin: 0 auto;
+	width: 90%;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-black.eot');
+  src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+#btn-home {
+	background-color: #34495E;
+}
+
+h4 {
+	text-decoration: underline;
+}
+
+/*
+===============
+=app
+===============
+*/
+/*INPUT STUFF*/
+.form-control {
+	height: 30px;
+	width: 50px;
+	padding: 5px;
+}
+
+.in-app {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#btn-graphall, #btn-stop {
+	width: 48%;
+}
+
+#btn-graphall {
+	margin-left: -10px;
+}
+
+#btn-stop.disabled, #btn-stop[disabled], #btn-graphall.disabled, #btn-graphall[disabled] {
+	background-color: #bdc3c7;
+	color: rgba(255, 255, 255, 0.75);
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+/*GRAPH STUFF*/
+#graph1cont {
+	float: left;
+	width: 50%;
+}
+
+#graph2cont {
+	float: right;
+	width: 50%;
+}
+
+#graph3cont {
+	position: relative;
+	left: 25%;
+}
+
+#app-ics {
+	float: right;
+}
+
+/*
+===============
+=misc
+===============
+*/
+.centering {
+	text-align: center;
+}
+
+#app-filler {
+	width: 28%;
+	margin: 0 auto;
+}
+
+.p-indented {
+	width: 80%;
+	margin: 0 auto;
+}

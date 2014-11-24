@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../../fonts/Raleway-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../../fonts/Raleway-Light.otf") format("opentype"); }
+body {
+  background-color: #d2e2e6;
+  font-family: "Raleway", "Times New Roman", sans-serif; }
+
+.centering {
+  margin: 0 auto; }
+
+#nav {
+  width: 200px;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  border: 1px groove #f0f0f0; }
+  #nav li {
+    padding: 10px 0;
+    cursor: pointer; }
+    #nav li:first-child {
+      background-color: #ebb4b4; }
+      #nav li:first-child:hover {
+        background-color: #eb6464; }
+    #nav li:nth-child(2) {
+      background-color: #ebebb4; }
+      #nav li:nth-child(2):hover {
+        background-color: #ebeb64; }
+
+#li-git {
+  background-color: #b4ebb4; }
+  #li-git:hover {
+    background-color: #67db67; }
+
+#li-twi {
+  background-color: #b4b4eb; }
+  #li-twi:hover {
+    background-color: #6464eb; }
+
+#li-lin {
+  background-color: #ebb4eb; }
+  #li-lin:hover {
+    background-color: #ea79ea; }
+
+#li-git, #li-twi, #li-lin, li:first-child, li:nth-child(2) {
+  transition: all 0.5s ease; }
+  #li-git:hover, #li-twi:hover, #li-lin:hover, li:first-child:hover, li:nth-child(2):hover {
+    font-weight: bold; }
+
+img {
+  width: 350px;
+  height: 500px; }
+
+#divleft {
+  width: 33%; }
+
+#divright {
+  width: 66%; }
+  #divright h1, #divright h3 {
+    margin: 0; }
+  #divright p {
+    margin: 10px auto;
+    width: 75%; }
+
+#divleft, #divright {
+  float: left;
+  position: relative;
+  text-align: center;
+  margin: 50px 0 0 0; }
+
+#nav {
+  margin: 20px auto; }
+
+/*# sourceMappingURL=home.css.map */
