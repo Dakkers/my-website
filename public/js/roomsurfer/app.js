@@ -4,19 +4,20 @@ var roomsurferApp = angular.module('roomsurferApp', [
     'roomsurferServices'
 ]);
 
-roomsurferApp.config(['$routeProvider',
-    function($routeProvider) {
+roomsurferApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: '../../views/rsIndex.html'
         })
         .when('/times/:room?', {
             templateUrl: '../../views/rsTimes.html',
-            controller: 'timesCtrl'
+            controller: 'timesCtrl',
+            reloadOnSearch: false
         })
         .when('/rooms/:time?', {
             templateUrl: '../../views/rsRooms.html',
-            controller: 'roomsCtrl'
+            controller: 'roomsCtrl',
+            reloadOnSearch: false
         })
         .otherwise({
             redirectTo: '/'

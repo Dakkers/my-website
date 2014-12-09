@@ -5,7 +5,9 @@ var blog = angular.module('blog', [
     'blogServices',
 ]);
 
-blog.config(['$routeProvider', function($routeProvider) {
+blog.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    
     $routeProvider
         .when('/', {
             templateUrl: '../../views/blogIndex.html',

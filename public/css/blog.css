@@ -18,6 +18,7 @@ body {
   margin: 0 auto; }
 
 body {
+  font-family: "Lato", "Raleway";
   margin: 0 auto;
   background-color: #ECECEC;
   color: #22313F; }
@@ -61,7 +62,8 @@ a {
       .post .post-content h2 a {
         color: #22313F; }
     .post .post-content p {
-      margin: 10px 0 0 0; }
+      margin: 10px 0 0 0;
+      font-size: 18px; }
     .post .post-content .link-to-post {
       color: #6C7A89; }
   .post .post-info {
@@ -78,6 +80,7 @@ a {
           color: black; }
 
 #sidebar {
+  font-family: "Raleway";
   width: 20%;
   background-color: #DADFE1;
   border: 1px solid #b6b6b6;

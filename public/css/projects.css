@@ -7,6 +7,9 @@
 @font-face {
   font-family: "Raleway-Light";
   src: url("../../fonts/Raleway-Light.otf") format("opentype"); }
+@font-face {
+  font-family: "Raleway-ExtraLight";
+  src: url("../../fonts/Raleway-ExtraLight.otf") format("opentype"); }
 body {
   background-color: #d2e2e6;
   font-family: "Raleway", "Times New Roman", sans-serif; }
@@ -22,7 +25,15 @@ body {
   border: 1px groove #f0f0f0; }
   #nav li {
     padding: 10px 0;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s ease; }
+    #nav li a {
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      color: #000; }
+    #nav li:hover {
+      font-weight: bold; }
     #nav li:first-child {
       background-color: #ebb4b4; }
       #nav li:first-child:hover {
@@ -31,26 +42,18 @@ body {
       background-color: #ebebb4; }
       #nav li:nth-child(2):hover {
         background-color: #ebeb64; }
-
-#li-git {
-  background-color: #b4ebb4; }
-  #li-git:hover {
-    background-color: #67db67; }
-
-#li-twi {
-  background-color: #b4b4eb; }
-  #li-twi:hover {
-    background-color: #6464eb; }
-
-#li-lin {
-  background-color: #ebb4eb; }
-  #li-lin:hover {
-    background-color: #ea79ea; }
-
-#li-git, #li-twi, #li-lin, li:first-child, li:nth-child(2) {
-  transition: all 0.5s ease; }
-  #li-git:hover, #li-twi:hover, #li-lin:hover, li:first-child:hover, li:nth-child(2):hover {
-    font-weight: bold; }
+    #nav li:nth-child(3) {
+      background-color: #b4ebb4; }
+      #nav li:nth-child(3):hover {
+        background-color: #67db67; }
+    #nav li:nth-child(4) {
+      background-color: #b4b4eb; }
+      #nav li:nth-child(4):hover {
+        background-color: #6464eb; }
+    #nav li:nth-child(5) {
+      background-color: #ebb4eb; }
+      #nav li:nth-child(5):hover {
+        background-color: #ea79ea; }
 
 body {
   margin: 0 auto;
@@ -60,21 +63,30 @@ h1 {
   margin: 10px 0 5px -15px; }
 
 p {
-  margin: 0 0 -10px 0; }
+  margin: 0;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px; }
 
-.project h2 {
-  margin: 20px 0 2px -5px; }
-.project h4 {
-  margin: 0; }
-.project img {
-  margin-right: 10px;
-  margin-bottom: -2px; }
-.project .hidden-content {
-  display: none; }
-  .project .hidden-content a {
+.project .project-header {
+  cursor: pointer; }
+  .project .project-header h2 {
+    margin: 20px 0 2px -5px; }
+  .project .project-header h3 {
+    margin: 0; }
+  .project .project-header img {
+    margin-right: 10px;
+    margin-bottom: -2px; }
+.project .project-content {
+  display: none;
+  overflow: hidden;
+  width: inherit; }
+  .project .project-content a {
     color: black; }
-  .project .hidden-content p {
-    margin: 2px 0; }
+  .project .project-content .subcontent {
+    margin-bottom: 16px; }
+    .project .project-content .subcontent:last-child {
+      margin-bottom: 0; }
 
 #nav {
   margin: 30px auto; }

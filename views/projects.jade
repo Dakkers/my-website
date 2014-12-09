@@ -1,10 +1,11 @@
 html
   head
     title Dakota St. Laurent
+    link(href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" )
+
     link(href='/css/projects.css',rel='stylesheet')
     script(src='/bower_components/jquery/dist/jquery.min.js')
     script(src='/js/vendor/jQueryRotateCompressed.js')
-    script(src='/js/nav.js')
     script(src='/js/projects.js')
 
   body
@@ -17,17 +18,19 @@ html
     div#projects
       for proj in projects
         div.project
-          h2
-            img(src="/img/caret.png")
-            = proj.title
-          h4
-            = proj.header
-          div.hidden-content
-            p!= proj.content.replace('(LINKHERE)', "<a href="+proj.link+">here</a>")
+          div.project-header
+            h2
+              img(src="/img/caret.png")
+              = proj.title
+            h3
+              = proj.header
+          div.project-content
+            for con in proj.content
+              div.subcontent!= con
             
     hr
     p.
-      For the record, this website is written using NodeJS/Express, Jade, SASS and CoffeeScript, 
+      For the record, this website is written using NodeJS/Express, Jade and SASS, 
       except for the web-apps hosted on here (at the moment).
 
     div.centering

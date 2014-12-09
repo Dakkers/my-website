@@ -1,6 +1,8 @@
 <html ng-app="blog">
   <head>
+    <base href="/blog/">
     <title>Blog</title>
+    <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
     <link href="/css/blog.css" rel="stylesheet">
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
@@ -12,11 +14,12 @@
     <script type="text/javascript" src="/js/blog/services.js"></script>
     <script type="text/javascript" src="/js/blog/controllers.js"></script>
     <!-- <script src="/js/nav.js"></script> -->
+
   </head>
 
   <body>
     <div id="header">
-      <h1><a href="#/">The Blog of a Saint</a></h1>
+      <h1><a href="">The Blog of a Saint</a></h1>
     </div>
 
     <div id='posts'>
@@ -27,7 +30,7 @@
       <p><b>Archive</b></p>
       <ul>
         <li ng-repeat="date in dates">
-          <a ng-href="#/archive/{{date.replace('-','/')}}">{{moment(date, 'YYYY-MM').format('MMMM YYYY')}}</a>
+          <a ng-href="archive/{{date.replace('-','/')}}">{{moment(date, 'YYYY-MM').format('MMMM YYYY')}}</a>
           <small>({{sidebarData.dates.data[date]}})</small>
         </li>
       </ul>
@@ -35,7 +38,7 @@
       <p><b>Tags</b></p>
       <ul>
         <li ng-repeat="tag in topics">
-          <a ng-href="#/topic/{{tag}}">{{tag}}</a>
+          <a ng-href="topic/{{tag}}">{{tag}}</a>
           <small>({{sidebarData.topics.data[tag]}})</small>
         </li>
       </ul>

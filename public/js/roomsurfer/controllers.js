@@ -112,7 +112,7 @@ roomsurferControllers.controller('timesCtrl', ['$scope', '$routeParams', 'Buildi
         $scope.searching = false;
         $scope.invalidInput = false;
         $scope.times = new Array(5);
-
+        
         Building.query({}, function(data) {
             // called when any route is accessed; populates building select
             $scope.buildings = {};

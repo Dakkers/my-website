@@ -2,55 +2,74 @@
   "numbersjs": {
     "title": "numbers.js",
     "header": "The most popular numerical library for JavaScript / NodeJS.",
-    "content": "I'm currently the lead developer and responsible for maintaining documentation. I'm currently in the process of writing linear system solvers. I'm also figuring out how to implement a sparse matrix data type and the associated reordering algorithms. Click (LINKHERE) to check out the repo.",
-    "link": "https://www.github.com/sjkaliski/numbers.js"
+    "content": [
+      "<p>I'm currently the lead developer and responsible for maintaining documentation. I'm in the process of writing linear system solvers. I'm also figuring out how to implement a sparse matrix data type and the associated reordering algorithms. Click <a href='https://www.github.com/sjkaliski/numbers.js'>here</a> to check out the repo.</p>"
+    ]
   },
-  
+
+  "nev": {
+    "content": [
+      "<p>This is a npm package that easily allows you to send verification emails to a user after they sign up on your webpage, assuming you use MongoDB as your database. When a user signs up, their data is put into a temporary collection with a TTL and a randomly generated URL associated with the user. When this URL is accessed, the user's data is put into the real collection that you defined.</p>",
+      "<p>There are multiple configuration options, such as the content of the verification email, whether or not a confirmation email is sent, etc. The project is also pretty well documented (not to brag...). You can check out the <a href=\"https://github.com/StDako/node-email-verification\">GitHub repository</a>, or you can check out the <a href=\"https://www.npmjs.org/package/email-verification\">NPM page</a>.</p>"
+    ],
+    "header": "Easily send verification emails for user signup when using Node and MongoDB.",
+    "title": "node email verification"
+  },
+
   "roomsurfer": {
     "title": "Roomsurfer",
     "header": "Find a place to study on UW's campus.",
-    "content": "Roomsurfer is a web app that helps University of Waterloo students find free rooms on campus.<br><br> Roomsurfer was my second JavaScript project. I scraped the data required using the Python module beautifulsoup, and then sorted it accordingly. When I first wrote the client-side part of the app, I didn't actually know how to do any server-side stuff at the time, so I loaded all of the data into the user's browser, and called it from there. Yeah, pretty terrible, I know. <br><br> The first revision I did to the app fixed this problem. I decided to rent a DigitalOcean server and I set up a MongoDB database so the user's data wouldn't be sucked dry (the data loaded into the browser was a 2.4 MB JSON file). The second revision I did was to reduce the reliance on jQuery for editing the view; I decided to try out KnockoutJS, which is what the app uses now, and it's pretty freaking cool. Click (LINKHERE) to see.",
-    "link": "roomsurfer"
+    "content": [
+      "<p>Roomsurfer was my second JavaScript project. I scraped the data required using the Python module beautifulsoup, and then sorted it accordingly. When I first wrote the client-side part of the app, I didn't actually know how to do any server-side stuff at the time, so I loaded all of the data into the user's browser, and called it from there. Yeah, pretty terrible, I know.</p>",
+      "<p>The first revision I did to the app fixed this problem. I decided to rent a DigitalOcean server and I set up a MongoDB database so the user's data wouldn't be sucked dry (the data loaded into the browser was a 2.4 MB JSON file). The second revision I did was to reduce the reliance on jQuery for editing the view; I decided to try out KnockoutJS, which is what the app uses now, and it's pretty freaking cool. Click <a href='roomsurfer'>here</a> to see.</p>"
+    ]
   },
   
   "grtexter": {
     "title": "GRTexter",
     "header": "Never forget a bus stop number again.",
-    "content": "A very simple Android app that allows the user to store GRT bus stop numbers as list items. Clicking on a list item sends a text to the GRT with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. It's not on the Play Store yet. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple."
+    "content": [
+      "<p>A very simple Android app that allows the user to store GRT bus stop numbers as list items. Clicking on a list item sends a text to the GRT with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. It's not on the Play Store yet. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple.</p>"
+    ]
   },
 
   "bracketscheatsheet": {
     "title": "Brackets Cheat Sheets",
     "header": "Use cheat sheets for quick coding references while working in Brackets.",
-    "content": "A Brackets extension that makes use of the two-pane split to keep a cheat sheet open in the right pane. A different cheat sheet can be used for different languages. No need to Google keywords that you commonly forget. Download it through Brackets' extension manager, or click (LINKHERE) to see the source code.",
-    "link": "https://github.com/stdako/brackets-cheatsheet"
+    "content": [
+      "<p>A Brackets extension that makes use of the two-pane split to keep a cheat sheet open in the right pane. A different cheat sheet can be used for different languages. No need to Google keywords that you commonly forget. Download it through Brackets' extension manager, or click <a href='https://github.com/stdako/brackets-cheatsheet'>here</a> to see the source code.</p>"
+    ]
   },
   
   "scholzly": {
     "title": "Scholzly",
     "header": "A Chrome extension that will change your life in so, so, so many different ways.",
-    "content": "This extension replaces all instances of the word 'so' on the page with multiple 'so's that are either space-, comma- or ellipsis-separated (or a combination of the three). A minimum and maximum number of 'so's are able to be set. Why? Because UW Physics. Click (LINKHERE) to check it out.",
-	"link": "https://chrome.google.com/webstore/detail/scholzly/acaddkimmjhinkbhplbodaigapgcplbb"
+    "content": [
+      "<p>This extension replaces all instances of the word 'so' on the page with multiple 'so's that are either space-, comma- or ellipsis-separated (or a combination of the three). A minimum and maximum number of 'so's are able to be set. Why? Because UW Physics. Click <a href='https://chrome.google.com/webstore/detail/scholzly/acaddkimmjhinkbhplbodaigapgcplbb'>here</a> to check it out.</p>"
+    ]
   },
   
   "warejects": {
     "title": "WareJects",
     "header": "Manage your software and hardware project ideas.",
-    "content": "WareJects is a Chrome extension that allows the user to organize their software and hardware project ideas. <br><br>WareJects was both my first JavaScript project and project I released to the 'public', and as such, was a terrible, terrible mess of code. I originally used jQuery and jQuery UI, and based my layout off of a Tabs example that used jQuery UI, which is an ugly P.O.S. I ended up completely rewriting it, using jQuery and Flat UI as the design, which is infinitely prettier. Click (LINKHERE) to get it.",
-    "link": "https://chrome.google.com/webstore/detail/warejects/nkmcljgcobeldlokkbdkbbfdfdmdmlbi?hl=en"
+    "content": [
+      "<p>WareJects is a Chrome extension that allows the user to organize their software and hardware project ideas.</p><p>WareJects was both my first JavaScript project and project I released to the 'public', and as such, was a terrible, terrible mess of code. I originally used jQuery and jQuery UI, and based my layout off of a Tabs example that used jQuery UI, which is an ugly P.O.S. I ended up completely rewriting it, using jQuery and Flat UI as the design, which is infinitely prettier. Click <a href='https://chrome.google.com/webstore/detail/warejects/nkmcljgcobeldlokkbdkbbfdfdmdmlbi?hl=en'>here</a> to get it.</p>"
+    ]
   },
   
   "collatz": {
     "title": "The Collatz Conjecture",
     "header": "Watch cool animations of one of the neatest unsolved mathematical problems.",
-    "content": "An interactive webpage for the Collatz conjecture. Nothing too fancy - the coolest part about this is the use of CanvasJS, which allows graphs to be updated dynamically (although it's a bit painful on the computer, from my understanding). Uses jQuery. Click (LINKHERE) to watch graphs do pretty things.",
-    "link": "collatz"
+    "content": [
+      "<p>An interactive webpage for the Collatz conjecture. Nothing too fancy - the coolest part about this is the use of CanvasJS, which allows graphs to be updated dynamically (although it's a bit painful on the computer, from my understanding). Uses jQuery. Click <a href='collatz'>here</a> to watch graphs do pretty things.</p>"
+    ]
   },
   
   "lorenz": {
     "title": "The Lorenz System",
     "header": "Watch cool animations of the world's best-known chaotic system.",
-    "content": "A group project for PMATH 370: Chaos and Fractals, a course offered at the University of Waterloo. Similar to the Collatz Conjecture webpage, but for the Lorenz system. Makes far prettier graphs than the Collatz Conjecture, IMO, but that's because strange attractors are so dang cool. Uses jQuery, CanvasJS and Flat UI. Click (LINKHERE).",
-    "link": "lorenz"
+    "content": [
+      "<p>A group project for PMATH 370: Chaos and Fractals, a course offered at the University of Waterloo. Similar to the Collatz Conjecture webpage, but for the Lorenz system. Makes far prettier graphs than the Collatz Conjecture, IMO, but that's because strange attractors are so dang cool. Uses jQuery, CanvasJS and Flat UI. Click <a href='lorenz'>here</a>.</p>"
+    ]
   }
 }

@@ -127,6 +127,11 @@ blogRouter.route('/api/*')
         res.json(null);
     });
 
+blogRouter.route('/*')
+    .get(function(req,res) {
+        res.sendFile('public/blog.html', {root: __dirname});
+    });
+
 // =====================================
 // ROOMSURFER ==========================
 // =====================================
@@ -135,6 +140,7 @@ app.use('/roomsurfer', roomsurferRouter);
 
 roomsurferRouter.route('/')
     .get(function(req, res) {
+        console.log('accessed');
         res.sendFile('public/roomsurfer.html', {root: __dirname});
     });
 

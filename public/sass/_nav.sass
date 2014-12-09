@@ -13,19 +13,21 @@
   li
     padding: 10px 0
     cursor: pointer
+    transition: all 0.5s ease
+    a
+      width: 100%
+      display: block
+      text-decoration: none
+      color: #000
+    &:hover
+      font-weight: bold
     &:first-child
       +hoverer(rgb(235,180,180), rgb(235,100,100))
     &:nth-child(2)
       +hoverer(rgb(235,235,180), rgb(235,235,100))
-       
-#li-git
-  +hoverer(rgb(180,235,180), rgb(103, 219, 103))
-#li-twi
-  +hoverer(rgb(180,180,235), rgb(100,100,235))
-#li-lin
-  +hoverer(rgb(235,180,235), rgb(234, 121, 234))
-
-#li-git, #li-twi, #li-lin, li:first-child, li:nth-child(2)
-  transition: all 0.5s ease
-  &:hover
-    font-weight: bold
+    &:nth-child(3)
+      +hoverer(rgb(180,235,180), rgb(103, 219, 103))
+    &:nth-child(4)
+      +hoverer(rgb(180,180,235), rgb(100,100,235))
+    &:nth-child(5)
+      +hoverer(rgb(235,180,235), rgb(234, 121, 234))
