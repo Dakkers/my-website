@@ -26,10 +26,10 @@
   },
   
   "grtexter": {
-    "title": "GRTexter",
+    "title": "TextABus",
     "header": "Never forget a bus stop number again.",
     "content": [
-      "<p>A very simple Android app that allows the user to store GRT bus stop numbers as list items. Clicking on a list item sends a text to the GRT with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. It's not on the Play Store yet. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple.</p>"
+      "<p>A very simple Android app that allows the user to store bus stop numbers as list items. Clicking on a list item sends a text to the specified phone number with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. It's currently in the Beta stage. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple.</p>"
     ]
   },
 
