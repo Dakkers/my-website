@@ -29,7 +29,7 @@
     "title": "TextABus",
     "header": "Never forget a bus stop number again.",
     "content": [
-      "<p>A very simple Android app that allows the user to store bus stop numbers as list items. Clicking on a list item sends a text to the specified phone number with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. It's currently in the Beta stage. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple.</p>"
+      "<p>A very simple Android app that allows the user to store bus stop numbers as list items. Clicking on a list item sends a text to the specified phone number with the stop number. I'm looking into making it a bit more intricate with receiving texts, but Java is literally awful. <a href=\"https://play.google.com/store/apps/details?id=com.saintdako.textabus\">Click here to check it out on the Play Store.</a>. I may make it into an iOS app as well as a Windows phone app, if someone else is willing to publish it on the App Store so I don't have to give any money to Apple.</p>"
     ]
   },
 
@@ -45,7 +45,7 @@
     "title": "Scholzly",
     "header": "A Chrome extension that will change your life in so, so, so many different ways.",
     "content": [
-      "<p>This extension replaces all instances of the word 'so' on the page with multiple 'so's that are either space-, comma- or ellipsis-separated (or a combination of the three). A minimum and maximum number of 'so's are able to be set. Why? Because UW Physics. Click <a href='https://chrome.google.com/webstore/detail/scholzly/acaddkimmjhinkbhplbodaigapgcplbb'>here</a> to check it out.</p>"
+      "<p>This extension replaces all instances of the word 'so' on the page with multiple 'so's that are either space-, comma- or ellipsis-separated (or a combination of the three). A minimum and maximum number of 'so's are able to be set. Why? Because UW Physics. Click <a href='https://chrome.google.com/webstore/detail/scholzly/acaddkimmjhinkbhplbodaigapgcplbb'>here</a> to check it out. Note: it will break several websites. I'm trying to fix this by creating a blacklist.</p>"
     ]
   },
   
