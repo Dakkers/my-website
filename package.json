@@ -3,7 +3,6 @@
     "body-parser": "*",
     "express": "*",
     "jade": "*",
-    "mongojs": "*",
-    "mongoose": "^3.8.18"
+    "pg": "^4.4.0"
   }
 }
