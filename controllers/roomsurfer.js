@@ -51,9 +51,11 @@ exports.roomNumber = function(req, res) {
 }
 
 exports.time = function(req, res) {
-    var day   = req.params.day.toUpperCase(),
+    var day   = req.params.day,
     start = parseInt(req.params.start),
     end   = parseInt(req.params.end);
+
+    day = day.charAt(0).toUpperCase() + day.slice(1);
 
     if (!start)
         start = 0;
@@ -65,5 +67,5 @@ exports.time = function(req, res) {
         [day, start, end], function(err, result) {
             res.json(result.rows);
         }
-    )
+    );
 };
