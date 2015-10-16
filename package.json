@@ -1,8 +1,32 @@
 {
+  "name": "saintdako.com",
+  "version": "1.0.0",
+  "description": "My website!",
+  "main": "server.js",
   "dependencies": {
-    "body-parser": "*",
-    "express": "*",
-    "jade": "*",
-    "pg": "^4.4.0"
-  }
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "is-there": "^4.0.0",
+    "jade": "^1.11.0",
+    "mongojs": "^1.2.1",
+    "mongoose": "^3.9.7",
+    "pg": "^4.4.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaintDako/my-website.git"
+  },
+  "author": "Dakota St. Laurent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaintDako/my-website/issues"
+  },
+  "homepage": "https://github.com/SaintDako/my-website#readme"
 }
