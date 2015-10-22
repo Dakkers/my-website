@@ -16,8 +16,8 @@
     "mocha": "^2.3.3"
   },
   "scripts": {
-    "test": "test",
-    "start": "node server.js"
+    "start": "npm test && supervisor server.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
