@@ -9,7 +9,7 @@
     "is-there": "^4.0.0",
     "jade": "^1.11.0",
     "mongojs": "^1.2.1",
-    "mongoose": "^3.9.7",
+    "mongoose": "^5.7.6",
     "pg": "^4.4.3"
   },
   "devDependencies": {
